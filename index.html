@@ -19,7 +19,7 @@
     <!-- header section start-->
     <header class="header">
       <a href="#" class="logo">
-        <img src="images/logo.png" alt="" />
+        <img src="images/logo.png" alt=""/>
       </a>
       <nav class="navbar active">
         <a href="#" class="active">Home</a>
@@ -35,7 +35,8 @@
           <i class="fas fa-search"></i>
         </button>
         <button>
-          <i class="fas fa-shopping-cart"></i>
+          <span class="shopping-number">0</span>
+          <i id="shopping-icon" class="fas fa-shopping-cart"></i>
         </button>
         <button id="menu-btn">
           <i class="fa-solid fa-bars"></i>
@@ -45,13 +46,24 @@
     <!-- header section end-->
     <!-- home section start-->
     <section class="home">
+      <div class="modal">
+        <div class="modal-header">
+          <h5>Shopping Cart</h5>
+          <i id="close" class="fa-solid fa-x"></i>
+        </div>
+        <div class="total">
+          <div class="total-title">Substotal:</div>
+          <span class="total-value">0</span>
+        </div>
+        <button class="btn-clear">CLEAR</button>
+      </div>
       <div class="content">
         <h3>EXPRESS HOME DELIVERY</h3>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
           hic dolores cupiditate? Fuga, aut deserunt.
         </p>
-        <a href="#" class="btn">Order Now</a>
+        <a class="btn-order">Order Now</a>
       </div>
     </section>
     <!-- home section end-->
@@ -64,10 +76,10 @@
             <img src="images/menu-1.png" />
             <span class="menu-category">PIZZA</span>
             <h3>6 Mini Pizzas</h3>
-            <div class="price">$104.99 <span>119.99</span></div>
+            <div class="price"><p>$104</p><span>119.99</span></div>
           </div>
           <div class="box-bottom">
-            <a href="#" class="btn">add to cart</a>
+            <a class="btn">add to cart</a>
           </div>
         </div>
         <div class="box">
@@ -75,10 +87,10 @@
             <img src="images/menu-2.png" />
             <span class="menu-category">BURGER</span>
             <h3>5 Mini Burgers</h3>
-            <div class="price">$99.99 <span>109.99</span></div>
+            <div class="price"><p>$99</p><span>109.99</span></div>
           </div>
           <div class="box-bottom">
-            <a href="#" class="btn">add to cart</a>
+            <a class="btn">add to cart</a>
           </div>
         </div>
         <div class="box">
@@ -86,10 +98,10 @@
             <img src="images/menu-3.png" />
             <span class="menu-category">PIZZA</span>
             <h3>2 Mixed Pizzas</h3>
-            <div class="price">$49.99 <span>59.99</span></div>
+            <div class="price"><p>$49</p><span>59.99</span></div>
           </div>
           <div class="box-bottom">
-            <a href="#" class="btn">add to cart</a>
+            <a class="btn">add to cart</a>
           </div>
         </div>
         <div class="box">
@@ -97,81 +109,17 @@
             <img src="images/menu-4.png" />
             <span class="menu-category">BURGER</span>
             <h3>3 Burgers</h3>
-            <div class="price">$79.99 <span>99.99</span></div>
+            <div class="price"><p>$79</p><span>99.99</span></div>
           </div>
           <div class="box-bottom">
-            <a href="#" class="btn">add to cart</a>
+            <a class="btn">add to cart</a>
           </div>
         </div>
       </div>
     </section>
     <!-- menu section end-->
 
-    <!-- products section start-->
-    <section class="products">
-      <h1 class="heading">our <span>products</span></h1>
-      <div class="box-container">
-        <div class="box">
-          <div class="box-head">
-            <span class="title">MINI BURGER</span>
-            <a href="#" class="name">Bacon Burger</a>
-          </div>
-          <div class="image">
-            <img src="images/product-1.png" alt="" />
-          </div>
-          <div class="box-bottom">
-            <div class="info">
-              <b class="price">$6.00</b>
-              <span class="amount">110gr / 300cal</span>
-            </div>
-            <div class="product-btn">
-              <a href="#"><i class="fas fa-plus"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-head">
-            <span class="title">MINI BURGER</span>
-            <a href="#" class="name">Bacon Burger</a>
-          </div>
-          <div class="image">
-            <img src="images/product-2.png" alt="" />
-          </div>
-          <div class="box-bottom">
-            <div class="info">
-              <b class="price">$6.00</b>
-              <span class="amount">110gr / 300cal</span>
-            </div>
-            <div class="product-btn">
-              <a href="#">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-head">
-            <span class="title">MINI BURGER</span>
-            <a href="#" class="name">Bacon Burger</a>
-          </div>
-          <div class="image">
-            <img src="images/product-1.png" alt="" />
-          </div>
-          <div class="box-bottom">
-            <div class="info">
-              <b class="price">$6.00</b>
-              <span class="amount">110gr / 300cal</span>
-            </div>
-            <div class="product-btn">
-              <a href="#">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- products section end-->
+
 
     <!-- about as start -->
     <section class="about">
@@ -200,7 +148,7 @@
             tenetur. Explicabo eveniet quae corporis culpa accusantium iure?
             Ullam, nobis voluptatibus.
           </p>
-          <a href="#" class="btn">Learn More</a>
+          <a class="btn-learn">Learn More</a>
         </div>
       </div>
     </section>
@@ -285,7 +233,7 @@
               <i class="fas fa-phone"></i>
               <input type="text" placeholder="phone number">             
             </div>
-            <input type="submit" class="btn" value="contact Now">
+            <input type="submit" class="btn-contact" value="contact Now">
         </form>
       </div>
     </section>
@@ -303,7 +251,7 @@
               <a href="#" class="title">how to take burgers?</a>
               <span>By Admin / 10st May, 2020</span>
               <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Temporibus, Laudantium!</p>
-              <a href="#" class="btn">Read More</a>
+              <a class="btn-read">Read More</a>
             </div>
           </div>
           <div class="box">
@@ -314,7 +262,7 @@
               <a href="#" class="title">how to take burgers?</a>
               <span>By Admin / 10st May, 2020</span>
               <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Temporibus, Laudantium!</p>
-              <a href="#" class="btn">Read More</a>
+              <a class="btn-read">Read More</a>
             </div>
           </div>
           <div class="box">
@@ -325,7 +273,7 @@
               <a href="#" class="title">how to take burgers?</a>
               <span>By Admin / 10st May, 2020</span>
               <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Temporibus, Laudantium!</p>
-              <a href="#" class="btn">Read More</a>
+              <a  class="btn-read">Read More</a>
             </div>
           </div>
         </div>
@@ -338,7 +286,7 @@
         <input type="text" 
         class="search-input"
         placeholder="Search">
-        <button class="btn">search</button>
+        <button class="btn-search">search</button>
       </div>
       <div class="share">
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
